@@ -1,6 +1,10 @@
 import { DollarSign, TrendingUp, Award, Briefcase, Gift, Zap, Target } from 'lucide-react';
 import { AdConfig } from '../components/Ads/AdBanner';
 import { ImageAdConfig } from '../components/Ads/ImageAd';
+import surveyImage1 from '../components/Ads/survay1.jpeg';
+import surveyImage2 from '../components/Ads/survay2.jpeg';
+import surveyImage3 from '../components/Ads/survay3.jpeg';
+import surveyImage4 from '../components/Ads/survay4.jpeg';
 
 /**
  * SURVEY ADS CONFIGURATION - HIGHLY CLICKABLE
@@ -24,7 +28,7 @@ export const surveyTextAds: AdConfig[] = [
     ctaText: 'Start Earning Now',
     ctaUrl: SURVEY_PLATFORM_URL,
     bgGradient: 'bg-gradient-to-br from-green-600 via-emerald-500 to-teal-500',
-    imageUrl: '/survay4.jpeg',
+    imageUrl: surveyImage4,
     badge: '🔥 INSTANT PAY',
     impressionTracking: 'survey-instant-cash-impression',
     clickTracking: 'survey-instant-cash-click'
@@ -72,7 +76,7 @@ export const surveyTextAds: AdConfig[] = [
     ctaText: 'Earn While Waiting',
     ctaUrl: SURVEY_PLATFORM_URL,
     bgGradient: 'bg-gradient-to-br from-yellow-600 via-amber-500 to-orange-500',
-    imageUrl: '/survay2.jpeg',
+    imageUrl: surveyImage2,
     badge: '💡 SMART MOVE',
     impressionTracking: 'survey-while-waiting-impression',
     clickTracking: 'survey-while-waiting-click'
@@ -84,7 +88,7 @@ export const surveyTextAds: AdConfig[] = [
     ctaText: 'Get Extra Cash',
     ctaUrl: SURVEY_PLATFORM_URL,
     bgGradient: 'bg-gradient-to-br from-cyan-600 via-blue-500 to-indigo-600',
-    imageUrl: '/survay3.jpeg',
+    imageUrl: surveyImage3,
     badge: '💰 BONUS TIME',
     impressionTracking: 'survey-success-impression',
     clickTracking: 'survey-success-click'
@@ -103,7 +107,7 @@ export const surveyImageAds: ImageAdConfig[] = [
     description: 'Join 50,000+ Kenyans earning money with simple surveys. No experience needed. Money sent to M-PESA in minutes!',
     ctaText: 'Start Earning Now →',
     ctaUrl: SURVEY_PLATFORM_URL,
-    imageUrl: '/survay1.jpeg',
+    imageUrl: surveyImage1,
     overlayGradient: 'bg-gradient-to-t from-green-900/95 via-emerald-600/70 to-transparent',
     badge: '🔥 50,000+ USERS',
     textPosition: 'bottom'
@@ -115,7 +119,7 @@ export const surveyImageAds: ImageAdConfig[] = [
     description: 'Limited time offer! Get KES 200 instantly credited to your account. Complete your first survey and withdraw immediately!',
     ctaText: 'Claim KES 200 Now →',
     ctaUrl: SURVEY_PLATFORM_URL,
-    imageUrl: '/survay2.jpeg',
+    imageUrl: surveyImage2,
     overlayGradient: 'bg-gradient-to-br from-orange-900/95 via-red-600/70 to-transparent',
     badge: '⚡ LIMITED TIME',
     textPosition: 'center'
@@ -127,7 +131,7 @@ export const surveyImageAds: ImageAdConfig[] = [
     description: 'Turn your smartphone into a money-making machine. Complete surveys anytime, anywhere. Instant M-PESA payments!',
     ctaText: 'Start Making Money →',
     ctaUrl: SURVEY_PLATFORM_URL,
-    imageUrl: '/survay3.jpeg',
+    imageUrl: surveyImage3,
     overlayGradient: 'bg-gradient-to-r from-purple-900/95 via-pink-600/70 to-transparent',
     badge: '💰 HIGH PAYING',
     textPosition: 'left',
@@ -140,7 +144,7 @@ export const surveyImageAds: ImageAdConfig[] = [
     description: 'Fastest way to make money online in Kenya. No waiting, no hassle. Answer questions, get paid instantly to M-PESA!',
     ctaText: 'Get Cash Now →',
     ctaUrl: SURVEY_PLATFORM_URL,
-    imageUrl: '/survay4.jpeg',
+    imageUrl: surveyImage4,
     overlayGradient: 'bg-gradient-to-t from-blue-900/95 via-cyan-600/70 to-transparent',
     badge: '⚡ INSTANT PAY',
     textPosition: 'bottom'
