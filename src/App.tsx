@@ -330,9 +330,9 @@ function AppContent() {
         onSuccess={onAuthSuccess}
       />
 
-      {/* Popup Ad Manager - Shows survey popups at intervals */}
+      {/* Popup Ad Manager - Shows survey popups at intervals (disabled when auth modal is open) */}
       <PopupAdManager
-        enabled={true}
+        enabled={!showAuthModal}           // Disable when signup/login modal is open
         delayBeforeFirstPopup={2000}      // First popup after 2 seconds
         displayDuration={8000}             // Shows for 8 seconds
       />
