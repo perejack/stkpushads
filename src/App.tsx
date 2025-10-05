@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-route
 import { motion } from 'framer-motion';
 import { Shield, Clock, CreditCard, Smartphone, FileCheck, UserCheck, ArrowRight } from 'lucide-react';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import LoanApplication from './components/LoanApplication';
 import PrivateRoute from './components/PrivateRoute';
 import AuthModal from './components/AuthModal';
@@ -12,6 +13,7 @@ import { AdManagerProvider } from './components/Ads';
 import { AdContainer } from './components/Ads';
 import { ImageAdContainer } from './components/Ads';
 import { PopupAdManager } from './components/Ads';
+import { AdAnalyticsDashboard } from './components/Ads';
 import { surveyTextAds, surveyImageAds } from './config/surveyAdsConfig';
 
 function HomePage() {
@@ -321,6 +323,7 @@ function AppContent() {
             }
           />
           <Route path="/loan-approved" element={<LoanApprovalPage />} />
+          <Route path="/ad-analytics" element={<AdAnalyticsDashboard />} />
         </Routes>
       </div>
 
@@ -336,6 +339,9 @@ function AppContent() {
         delayBeforeFirstPopup={2000}      // First popup after 2 seconds
         displayDuration={8000}             // Shows for 8 seconds
       />
+
+      {/* Footer with Analytics Star Icon */}
+      <Footer />
     </div>
   );
 }
